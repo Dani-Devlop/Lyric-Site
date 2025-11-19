@@ -27,16 +27,16 @@ h2{
 
 /* Cover */
 img{
-    width: 20rem;
+    width: 70%;
     border-radius: 1em;
     box-shadow:  red;
     padding: 1em;
 }
 
 #Lyric{
-    padding: 1em;
+    padding: 3em;
     /* margin: 2e; */
-    width: 55vh;
+    width: 70%;
     text-align: left;
 
 
