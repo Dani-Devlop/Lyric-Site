@@ -1,3 +1,4 @@
+/* Note : first Made your site for Phone , next : Desktop , next : etc. */
 * {
     background-color: black;
     color: aqua;
@@ -23,7 +24,7 @@
     .wrapper-main{
     width: 100%;
     background-color: orange;
-
+    
 }
 
 }
