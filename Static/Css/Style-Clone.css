@@ -38,11 +38,22 @@
 }
 
 /* 601 - 768 */
-@media only screen and  (min-width: 601px) and (max-width: 768px) {
+@media only screen and  (min-width: 601px) {
 
     .wrapper-main{
     width: 100%;
     background-color: red;
+
+}
+}
+
+
+/* 768 - 992 */
+@media only screen and (min-width: 768px) {
+
+    .wrapper-main{
+    width: 100%;
+    background-color: green;
 
 }
 }
@@ -56,6 +67,4 @@
 
 }
 }
-
 /*  <600px , 601px , 768px , 992px , above 1200px*/
-/* Highest width display is 8k : 7680pixels */
