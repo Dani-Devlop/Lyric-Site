@@ -1,99 +1,98 @@
-:root{
-    --background-color: black;
-    --text-color: oklch(0.85 0 0);
-    /* --Border-color : oklch(0.85 0 0); */
-    --Border-color : rgba(196, 127, 127, 0.74);
-    --Titile-color : rgba(255, 255, 255, 0.7);
-    --Cover-Shadow-Color : rgba(255, 0, 0, 0.74);
-    /* Scroll Prop */
-    --Scroll-Color : #DB1520;
+:root {
+  --background-color: black;
+  --text-color: oklch(0.85 0 0);
+  /* --Border-color : oklch(0.85 0 0); */
+  --Border-color: rgba(196, 127, 127, 0.74);
+  --Titile-color: rgba(255, 255, 255, 0.7);
+  --Cover-Shadow-Color: rgba(255, 0, 0, 0.74);
+  /* Scroll Prop */
+  --Scroll-Color: #db1520;
 
-    /* Fonts */
-    --font-size: 20px;
-    --font-family: system-ui, -apple-system, sens-serif;
-
-
-
+  /* Fonts */
+  --font-size: 20px;
+  --font-family: system-ui, -apple-system, sens-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family:var(--font-family);
-    padding: 2px;
-    /* margin-left: 1em auto; */
-    /* margin-right: em auto; */
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  padding: 2px;
+  /* margin-left: 1em auto; */
+  /* margin-right: em auto; */
 }
 
 /* Body */
-body{
-    /* background-color: aqua; */
-    overflow: hidden;
-    display: block;
+body {
+  /* background-color: aqua; */
+  overflow: hidden;
+  display: block;
 }
 
 /* IDK */
 
-.content-top{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    height: 100%;
+.content-top {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 100%;
 }
 
 /* Main */
-.wrapper-main{
-    background-color: var(--background-color);
-    width: 1000px;
-    padding: 5px 0 auto ;
-    margin: 0 auto;
-    border: 2px solid var(--Border-color);
-    border-radius: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.wrapper-main {
+  background-color: var(--background-color);
+  width: 1000px;
+  /* height: px; */
+  height: 80vh;
+  padding: 5px 0 auto;
+  margin: 0 auto;
+  border: 2px solid var(--Border-color);
+
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.index-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.index-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Card */
-
-.card-container{
-    height: 90vh;
-    padding: 2px;
-    border-radius: 24px;
-    position: relative;    
-    display: block;
-    box-sizing: border-box;
+.card-container {
+  height: 90vh;
+  padding: 2px;
+  border-radius: 24px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
 }
 
 /* Tittle */
-h2{
-    margin: auto;
-    display: block;
-    width: fit-content;
-    height: fit-content;
-    padding: 8px 16px 10px 16px ;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 20px;
-    border: 2px solid var(--Border-color);
-    border-radius: 1em ;
-    /* padding: 0.6em; */
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    color: var(--Titile-color);
-    background: radial-gradient(
+h2 {
+  margin: auto;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 16px 10px 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 20px;
+  border: 2px solid var(--Border-color);
+  border-radius: 1em;
+  /* padding: 0.6em; */
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: var(--Titile-color);
+  background: radial-gradient(
       47.2% 50% at 50.39% 88.37%,
       rgba(255, 255, 255, 0.12) 0%,
       rgba(255, 255, 255, 0) 100%
@@ -102,53 +101,48 @@ h2{
 }
 
 /* Cover */
-img{
-    width: 70%;
-    height: 70%;
-    margin: 15px auto;
-    display: block;
-    box-shadow: 0px 8px 24px var(--Cover-Shadow-Color);
-    border-radius: 1em;
-    padding: 0.2em;
+img {
+  width: 250px;
+  height: 250px;
+  margin: 15px auto;
+  display: block;
+  box-shadow: 0px 8px 24px var(--Cover-Shadow-Color);
+  border-radius: 1em;
+  padding: 0.2em;
 }
 
 /* Lyric */
-#Lyric{
-    padding: 1.5em;
-    
-    /* margin: 2e; */
-    width: 70%;
-    height: 214px;
-    text-align: left;
-    line-height: 1.6;
-    white-space: pre-warp;
-    overflow-x: 10%;
-    overflow-y: auto;
-    /* overflow-block: scroll ; */
-    /* scroll-behavior: smooth; */
-    /* scrollbar-width:thin; */
+#Lyric {
+  padding: 1.5em;
+  /* margin: 2e; */
+  width: 70%;
+  height: 30vh;
+  text-align: left;
+  line-height: 1.6;
+  white-space: pre-warp;
+  overflow-x: 10%;
+  overflow-y: auto;
 
-    /* scrollbar-shadow-color: red ; */
-    /* scrollbar-color:  var(--Scroll-Color) ; */
+  /* overflow-block: scroll ; */
+  /* scroll-behavior: smooth; */
+  /* scrollbar-width:thin; */
+  /* scrollbar-shadow-color: red ; */
+  /* scrollbar-color:  var(--Scroll-Color) ; */
 }
 
-
-.lyrics::-webkit-scrollbar {
-  width: 1px;
+#Lyric::-webkit-scrollbar {
+  width: 2px;
   color: oklch(0.85 0 0);
   box-shadow: 0px 0px 5px #db1520;
 }
-.lyrics::-webkit-scrollbar-thumb {
-  background: var(--electric-light-color);
+#Lyric::-webkit-scrollbar-thumb {
+  background: red;
   border-radius: 3px;
 }
-.lyrics::-webkit-scrollbar-track {
+#Lyric::-webkit-scrollbar-track {
   background: transparent;
 }
 
-
-
-/* rem */
 
 /* Media and responsive */
 
@@ -156,42 +150,34 @@ img{
 /* Only Screen for before the 90's if " Only Screen " doesn't exist in our code they see mobile version on their Pc */
 /* Orientation is when turn the phone vertically : Landscape */
 @media only screen and (max-width: 600px) and (orientation: landscape) {
-
-    .wrapper-main{
+  .wrapper-main {
     /* padding-top: 50%; */
     width: 100%;
     background-color: orange;
-}
-
+  }
 }
 /* Orientation is when turn the phone horizontally : portrait */
 @media only screen and (max-width: 600px) and (orientation: portrait) {
-
-    .wrapper-main{
+  .wrapper-main {
     width: 100%;
     /* background-color: rgb(33, 46, 218); */
-
-}
+  }
 }
 
 /* 601 - 768 */
-@media only screen and  (min-width: 601px) and (max-width: 768px) {
-
-    .wrapper-main{
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .wrapper-main {
     width: 100%;
     /* background-color: red; */
-
-}
+  }
 }
 
 /* 992 - 1000 */
 @media only screen and (min-width: 992px) {
-
-    .wrapper-main{
+  .wrapper-main {
     width: 100%;
     background-color: purple;
-
-}
+  }
 }
 
 /*  <600px , 601px , 768px , 992px , above 1200px*/
