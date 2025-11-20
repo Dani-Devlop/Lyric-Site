@@ -1,0 +1,131 @@
+:root {
+    --background-color: black;
+    --text-color: oklch(0.85 0 0);
+    --Border-color: rgba(196, 127, 127, 0.74);
+    --Titile-color: rgba(255, 255, 255, 0.7);
+    --Cover-Shadow-Color: rgba(255, 0, 0, 0.74);
+    --Scroll-Color: #db1520;
+    --font-size: 17px;
+    --font-family: system-ui, -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* IDK */
+.content-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+}
+
+/* Main */
+.wrapper-main {
+    background-color: var(--background-color);
+    width: 1000px;
+    height: 90vh;
+    padding: 20px;
+    margin: auto;
+    border: 2px solid var(--Border-color);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card */
+.card-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Title */
+h2 {
+    margin: 15px auto 20px;
+    display: block;
+    width: fit-content;
+    padding: 8px 40px 10px 40px;
+    border: 2px solid var(--Border-color);
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: var(--Titile-color);
+    background: radial-gradient(
+        47.2% 50% at 50.39% 88.37%,
+        rgba(255, 255, 255, 0.12) 0%,
+        rgba(255, 255, 255, 0) 100%
+    ), rgba(255, 255, 255, 0.04);
+    flex-shrink: 0;
+}
+
+/* Cover */
+img {
+    width: 15em;
+    height: 14em;
+    margin: 15px auto 20px;
+    display: block;
+    box-shadow: 0px 8px 24px var(--Cover-Shadow-Color);
+    border-radius: 1em;
+    padding: 0;
+    filter: contrast(110%);
+    flex-shrink: 0;
+}
+
+/* Lyric */
+#Lyric, .Lyric {
+    padding: 1.5em;
+    font-size: 17px;
+    width: 70%;
+    flex: 1;
+    text-align: left;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+#Lyric::-webkit-scrollbar {
+    width: 4px;
+}
+
+#Lyric::-webkit-scrollbar-thumb {
+    background: var(--Scroll-Color);
+    border-radius: 3px;
+}
+
+#Lyric::-webkit-scrollbar-track {
+    background: transparent;
+}

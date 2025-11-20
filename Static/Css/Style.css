@@ -50,7 +50,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
   padding: 0;
 }
 
@@ -84,24 +83,23 @@ body {
 
 /* Tittle */
 h2 {
-  margin: 15px auto 20px;
-  display: block;
-  width: fit-content;
-  padding: 8px 16px 10px 16px;
-  border: 2px solid var(--Border-color);
-  border-radius: 1em;
-  /* padding: 0.6em; */
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-  color: var(--Titile-color);
-  background: radial-gradient(
-      47.2% 50% at 50.39% 88.37%,
-      rgba(255, 255, 255, 0.12) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    rgba(255, 255, 255, 0.04);
+    margin: 15px auto 20px;
+    display: block;
+    width: fit-content;
+    padding: 8px 40px 10px 40px;
+    border: 2px solid var(--Border-color);
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: var(--Titile-color);
+    background: radial-gradient(
+        47.2% 50% at 50.39% 88.37%,
+        rgba(255, 255, 255, 0.12) 0%,
+        rgba(255, 255, 255, 0) 100%
+    ), rgba(255, 255, 255, 0.04);
+    flex-shrink: 0;
 }
 
 /* Cover */
@@ -152,7 +150,9 @@ img {
   background: transparent;
 }
 
-/* Media and responsive */
+
+
+/* ----------- Media and responsive -------------- */
 
 /* 0 - 600 */
 /* Only Screen for before the 90's if " Only Screen " doesn't exist in our code they see mobile version on their Pc */
