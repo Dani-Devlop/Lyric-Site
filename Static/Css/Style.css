@@ -9,50 +9,60 @@
   --Scroll-Color: #db1520;
 
   /* Fonts */
-  --font-size: 20px;
+  --font-size: 17px;
   --font-family: system-ui, -apple-system, sens-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--font-family);
-  padding: 2px;
+  box-sizing: border-box;
   /* margin-left: 1em auto; */
   /* margin-right: em auto; */
 }
 
-/* Body */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Body  html*/
 body {
-  /* background-color: aqua; */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
-  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /* IDK */
 .content-top {
   display: flex;
+  /* height:max-content; */
+  /* min-height: 15vh; */
   flex-direction: column;
-  padding: 30px;
-  height: 100%;
-    display: flex;
+  /* padding: 30px; */
+  /* height: 100%; */
+  display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
 }
 
 /* Main */
 .wrapper-main {
   background-color: var(--background-color);
   width: 1000px;
-  /* height: px; */
-  height: 80vh;
-  padding: 5px 0 auto;
-  margin: 0 auto;
+  height: 90vh;
+  padding: 20px;
+  /* max-width: 100%; */
+  margin: auto;
   border: 2px solid var(--Border-color);
-
   border-radius: 1em;
   display: flex;
   flex-direction: column;
@@ -62,24 +72,22 @@ body {
 
 /* Card */
 .card-container {
-  height: 90vh;
-  padding: 2px;
-  border-radius: 24px;
-  position: relative;
-  display: block;
-  box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* Tittle */
 h2 {
-  margin: auto;
+  margin: 15px auto 20px;
   display: block;
   width: fit-content;
-  height: fit-content;
   padding: 8px 16px 10px 16px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: 20px;
   border: 2px solid var(--Border-color);
   border-radius: 1em;
   /* padding: 0.6em; */
@@ -100,24 +108,29 @@ h2 {
 img {
   width: 15em;
   height: 14em;
-  margin: 15px auto;
+  margin: 15px auto 20px;
   display: block;
   box-shadow: 0px 8px 24px var(--Cover-Shadow-Color);
   border-radius: 1em;
-  padding: 0.2em;
+  padding: 2px;
+  filter: contrast(110%);
+  flex-shrink: 0;
 }
 
 /* Lyric */
-#Lyric {
+#Lyric,
+.Lyric {
   padding: 1.5em;
+  font-size: 17px;
   /* margin: 2e; */
   width: 70%;
-  height: 30vh;
+  flex: 1; 
   text-align: left;
   line-height: 1.6;
   white-space: pre-warp;
-  overflow-x: 10%;
+  overflow-x: hidden;
   overflow-y: auto;
+  margin-bottom: 20px;
 
   /* overflow-block: scroll ; */
   /* scroll-behavior: smooth; */
@@ -132,13 +145,12 @@ img {
   box-shadow: 0px 0px 5px #db1520;
 }
 #Lyric::-webkit-scrollbar-thumb {
-  background: red;
+  background: var(--Scroll-Color);
   border-radius: 3px;
 }
 #Lyric::-webkit-scrollbar-track {
   background: transparent;
 }
-
 
 /* Media and responsive */
 
@@ -146,10 +158,54 @@ img {
 /* Only Screen for before the 90's if " Only Screen " doesn't exist in our code they see mobile version on their Pc */
 /* Orientation is when turn the phone vertically : Landscape */
 @media only screen and (max-width: 600px) and (orientation: landscape) {
+  .content-top {
+    padding: 8px;
+    height: 100vh;
+  }
+
   .wrapper-main {
-    /* padding-top: 50%; */
-    width: 100%;
-    background-color: orange;
+    width: calc(100vw - 16px);
+    height: calc(100vh - 16px);
+    border-radius: 1em;
+    border: 2px solid var(--Border-color);
+    padding: 12px;
+    margin: 0;
+  }
+
+  .card-container {
+    height: 100%;
+    padding: 8px;
+    justify-content: flex-start;
+  }
+
+  h2 {
+    font-size: 11px;
+    padding: 6px 25px;
+    margin: 10px auto 12px;
+    flex-shrink: 0;
+  }
+
+  img {
+    width: min(70vw, 280px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 12px auto 15px;
+    flex-shrink: 0;
+  }
+
+  #Lyric,
+  .Lyric {
+    width: 95%;
+    flex: 1;
+    font-size: 14px;
+    padding: 1em 0.8em;
+    line-height: 1.55;
+    margin-bottom: 10px;
+    overflow-y: auto;
+  }
+
+  #Lyric::-webkit-scrollbar {
+    width: 2px;
   }
 }
 /* Orientation is when turn the phone horizontally : portrait */
