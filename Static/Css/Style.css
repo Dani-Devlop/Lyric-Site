@@ -162,62 +162,6 @@ img {
 
 /* 0 - 600 */
 /* Only Screen for before the 90's if " Only Screen " doesn't exist in our code they see mobile version on their Pc */
-/* Orientation is when turn the phone vertically : Landscape */
-@media only screen and (max-width: 600px) and (orientation: landscape) {
-  .content-top {
-    padding: 10px;
-    height: 100dvh;
-    min-height: -webkit-fill-available;
-  }
-
-  .wrapper-main {
-    width: calc(100vw - 20px);
-    height: calc(100dvh - 20px);
-    max-height: -webkit-fill-available;
-    border-radius: 1em;
-    border: 2px solid var(--Border-color);
-    padding: 12px;
-    margin: 10px auto;
-  }
-
-  .card-container {
-    height: 100%;
-    padding: 8px;
-    justify-content: flex-start;
-  }
-
-  h2 {
-    font-size: 11px;
-    padding: 6px 25px;
-    margin: 10px auto 12px;
-    flex-shrink: 0;
-  }
-
-  img {
-    width: min(70vw, 280px);
-    height: auto;
-    aspect-ratio: 1 / 1;
-    margin: 12px auto 15px;
-    flex-shrink: 0;
-  }
-
-  #Lyric,
-  .Lyric {
-    width: 95%;
-    flex: 1;
-    font-size: 14px;
-    padding: 1em 0.8em;
-    line-height: 1.55;
-    margin-bottom: 10px;
-    overflow-y: auto;
-  }
-
-  #Lyric::-webkit-scrollbar {
-    width: 2px;
-  }
-}
-/* 0 - 600 */
-/* Only Screen for before the 90's if " Only Screen " doesn't exist in our code they see mobile version on their Pc */
 /* Orientation is when turn the phone horizontally : portrait */
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   .wrapper-main {
@@ -234,12 +178,12 @@ img {
     justify-content: flex-start;
   }
   h2 {
-    width: 100%;
+    width: fit-content;
     font-size: 18px;
     margin: 10px auto 12px;
   }
   img {
-    width: min(35vm,280px); /*dhdhwa*/
+    width: min(70vm,280px); /*dhdhwa*/
     height: auto;
     aspect-ratio: 1 / 1;
     /* max-width: 15em; */
@@ -255,61 +199,17 @@ img {
 
 /* Orientation is when turn the phone vertically : Landscape */
 @media only screen and (max-width: 600px) and (orientation: landscape) {
-  .content-top {
-    padding: 10px;
-    height: 100dvh;
-    min-height: -webkit-fill-available;
+  *{
+    background-color: var(--Scroll-Color);
   }
 
-  .wrapper-main {
-    width: calc(100vw - 20px);
-    height: calc(100dvh - 20px);
-    max-height: -webkit-fill-available;
-    border-radius: 1em;
-    border: 2px solid var(--Border-color);
-    padding: 12px;
-    margin: 10px auto;
-  }
-
-  .card-container {
-    height: 100%;
-    padding: 8px;
-    justify-content: flex-start;
-  }
-
-  h2 {
-    font-size: 11px;
-    padding: 6px 25px;
-    margin: 10px auto 12px;
-    flex-shrink: 0;
-  }
-
-  img {
-    width: min(70vw, 280px);
-    height: auto;
-    aspect-ratio: 1 / 1;
-    margin: 12px auto 15px;
-    flex-shrink: 0;
-  }
-
-  #Lyric,
-  .Lyric {
-    width: 95%;
-    flex: 1;
-    font-size: 14px;
-    padding: 1em 0.8em;
-    line-height: 1.55;
-    margin-bottom: 10px;
-    overflow-y: auto;
-  }
-
-  #Lyric::-webkit-scrollbar {
-    width: 2px;
-  }
 }
 
 /* 601 - 768 */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+    *{
+    background-color: blue;
+  }
   .wrapper-main {
     width: 100%;
     /* background-color: red; */
@@ -318,6 +218,9 @@ img {
 
 /* 992 - 1000 */
 @media only screen and (min-width: 992px) {
+  *{
+    background-color: blue;
+  }
   .wrapper-main {
     width: 100%;
     background-color: purple;
