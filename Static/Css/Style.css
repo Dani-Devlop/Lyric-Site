@@ -209,12 +209,11 @@ img {
   body {
     /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
     background-image:
-  /* linear-gradient(to top, #ff0000 0%, transparent 3.4%), */ linear-gradient(
+ linear-gradient(
         to right,
         #ff0000 0%,
         transparent 10%
       ),
-      /* linear-gradient(to bottom, #ff0000 0%, transparent 4%), */
         linear-gradient(to left, #ff0000 0%, transparent 10%);
   }
 
@@ -232,12 +231,7 @@ img {
     width: 16em;
     margin: 0 auto 1.095em auto;
   }
-  /* margin: 10px 5px 15px 20px;
-  top margin is 10px
-  right margin is 5px
-  bottom margin is 15px
-  left margin is 20px */
-  
+
   .Lyric , #Lyric{
     padding: 15px;
     width: 90%;
@@ -247,6 +241,39 @@ img {
   }
 }
 
+
+/* 769 - 991 / Lager Tablet */
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  body {
+    /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
+    background-image:
+        linear-gradient(to right,#ff0000 0% ,transparent 7.4em),
+        linear-gradient(to left, #ff0000 0%, transparent 7.4em);
+  }
+
+  .wrapper-main {
+    width: 80dvh;
+    /* background-color: red; */
+  }
+  h2 {
+    margin: 10px auto;
+    /* padding: ; */
+    border-radius: 1.1em;
+  }
+  img {
+    height: 16em;
+    width: 16em;
+    margin: 0 auto 1.095em auto;
+  }
+
+  .Lyric , #Lyric{
+    padding: 15px;
+    width: 100%;
+    font-size: 21px;
+    /* text-align: center; */
+    line-height: 1.6;
+  }
+}
 /* 992 - 1000   */
 @media only screen and (min-width: 992px) {
   * {
