@@ -119,7 +119,7 @@ img {
 /* Lyric */
 #Lyric,
 .Lyric {
-  padding: 1.5em;
+  padding: 1.4em;
   font-size: 17px;
   width: 70%;
   flex: 1;
@@ -183,7 +183,7 @@ img {
     margin: 10px auto 12px;
   }
   img {
-    width: min(70vm,280px); /*dhdhwa*/
+    width: min(70vm, 280px); /*dhdhwa*/
     height: auto;
     aspect-ratio: 1 / 1;
     /* max-width: 15em; */
@@ -199,27 +199,58 @@ img {
 
 /* Orientation is when turn the phone vertically : Landscape */
 @media only screen and (max-width: 600px) and (orientation: landscape) {
-  *{
+  * {
     background-color: var(--Scroll-Color);
   }
-
 }
 
-/* 601 - 768 */
+/* 601 - 768 / Tablet*/
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-    *{
-    background-color: blue;
+  body {
+    /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
+    background-image:
+  /* linear-gradient(to top, #ff0000 0%, transparent 3.4%), */ linear-gradient(
+        to right,
+        #ff0000 0%,
+        transparent 10%
+      ),
+      /* linear-gradient(to bottom, #ff0000 0%, transparent 4%), */
+        linear-gradient(to left, #ff0000 0%, transparent 10%);
   }
+
   .wrapper-main {
-    width: 100%;
+    width: 70dvh;
     /* background-color: red; */
   }
+  h2 {
+    margin: 10px auto;
+    /* padding: ; */
+    border-radius: 1.1em;
+  }
+  img {
+    height: 16em;
+    width: 16em;
+    margin: 0 auto 1.095em auto;
+  }
+  /* margin: 10px 5px 15px 20px;
+  top margin is 10px
+  right margin is 5px
+  bottom margin is 15px
+  left margin is 20px */
+  
+  .Lyric , #Lyric{
+    padding: 15px;
+    width: 90%;
+    font-size: 19px;
+    /* text-align: center; */
+    line-height: 1.6;
+  }
 }
 
-/* 992 - 1000 */
+/* 992 - 1000   */
 @media only screen and (min-width: 992px) {
-  *{
-    background-color: blue;
+  * {
+    background-color: greenyellow;
   }
   .wrapper-main {
     width: 100%;
@@ -231,22 +262,22 @@ img {
 /* Highest width display is 8k : 7680pixels */
 
 @supports (height: 100dvh) {
-    body,
-    .content-top {
-        height: 100dvh;
+  body,
+  .content-top {
+    height: 100dvh;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .wrapper-main {
+      height: calc(100dvh - 16px);
     }
-    
-    @media only screen and (max-width: 600px) {
-        .wrapper-main {
-            height: calc(100dvh - 16px);
-        }
-    }
+  }
 }
 
 /* Fallback for iOS old */
 @supports not (height: 100dvh) {
-    body,
-    .content-top {
-        height: -webkit-fill-available;
-    }
+  body,
+  .content-top {
+    height: -webkit-fill-available;
+  }
 }
