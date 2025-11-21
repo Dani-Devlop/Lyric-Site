@@ -57,7 +57,7 @@ body {
 /* Main */
 .wrapper-main {
   background-color: var(--background-color);
-  width: 1000px;
+  width: 1200px;
   height: 90vh;
   padding: 20px;
   margin: auto;
@@ -211,10 +211,10 @@ img {
     background-image:
  linear-gradient(
         to right,
-        #ff0000 0%,
+        #db1520 0%,
         transparent 10%
       ),
-        linear-gradient(to left, #ff0000 0%, transparent 10%);
+        linear-gradient(to left, #db1520 0%, transparent 10%);
   }
 
   .wrapper-main {
@@ -227,8 +227,8 @@ img {
     border-radius: 1.1em;
   }
   img {
-    height: 16em;
-    width: 16em;
+    height: 14em;
+    width: 14em;
     margin: 0 auto 1.095em auto;
   }
 
@@ -243,12 +243,12 @@ img {
 
 
 /* 769 - 991 / Lager Tablet */
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
   body {
     /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
     background-image:
-        linear-gradient(to right,#ff0000 0% ,transparent 7.4em),
-        linear-gradient(to left, #ff0000 0%, transparent 7.4em);
+        linear-gradient(to right,#db1520 0% ,transparent 7.4em),
+        linear-gradient(to left, #db1520 0%, transparent 7.4em);
   }
 
   .wrapper-main {
@@ -261,8 +261,8 @@ img {
     border-radius: 1.1em;
   }
   img {
-    height: 16em;
-    width: 16em;
+    height: 14em;
+    width: 14em;
     margin: 0 auto 1.095em auto;
   }
 
@@ -276,12 +276,31 @@ img {
 }
 /* 992 - 1000   */
 @media only screen and (min-width: 992px) {
-  * {
-    background-color: greenyellow;
+  body {
+    /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
+    background-image:
+        linear-gradient(to right,#db1520 0% ,transparent 7.4em ),
+        linear-gradient(to left, #db1520 0%, transparent 7.4em);
+  }
+  .content-top{
+    padding: 0
   }
   .wrapper-main {
-    width: 100%;
-    background-color: purple;
+    padding: 10px ;
+    border: 1.6px solid var(--Border-color);
+    width: 70%;
+    /* background-color: purple; */
+  }
+  h2{
+    margin: 1px auto auto;
+  }
+  img{
+    margin: 10px auto;
+    width: 15em;
+    height: 15em; 
+  }
+  .Lyric , #Lyric {
+    padding: 10px;
   }
 }
 
