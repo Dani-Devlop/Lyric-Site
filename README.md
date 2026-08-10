@@ -3,7 +3,7 @@
 **A beautifully styled, responsive lyric display page for *Marino – Lust (feat. Alexandria)***
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-brightgreen)](https://dani-devlop.github.io/Lyric-Site/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License](https://github.com/Dani-Devlop/Lyric-Site/blob/main/LICENCE)](LICENSE)
 
 ---
 
