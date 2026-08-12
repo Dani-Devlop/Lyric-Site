@@ -1,6 +1,6 @@
 # 🎵 Lyric-Site
 
-> A beautifully styled, responsive lyric display page for *Marino – Lust (feat. Alexandria)*
+> A beautifully styled, responsive lyric display page for _Marino – Lust (feat. Alexandria)_
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-brightgreen)](https://dani-devlop.github.io/Lyric-Site/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Dani-Devlop/Lyric-Site/blob/main/LICENCE)
@@ -10,10 +10,10 @@
 ## 📸 Website Preview
 
 <p align="center">
-  <img src="assets/screenshot.png" alt="Lyric-Site Preview" width="700">
-</p>
+  <img src="Static/Screenshot/PC.png" alt="Lyric-Site Preview" width="700">
+  <img src="Static/Screenshot/Phone.png" alt="Lyric-Site Preview" width="700">
 
-> *Replace `assets/screenshot.png` with an actual screenshot of your live site.*
+</p>
 
 ---
 
@@ -21,29 +21,29 @@
 
 **Lyric-Site** is a minimalist, single-page web application designed to present song lyrics in an elegant, immersive format. Built with pure HTML and CSS, it focuses on delivering a clean typographic experience with subtle visual enhancements—making the lyrics the star of the page.
 
-The page features the full lyrics to *Marino – Lust (feat. Alexandria)*, formatted with clear section headers (Chorus, Verse, Bridge, Outro) and a stylized album cover placeholder.
+The page features the full lyrics to _Marino – Lust (feat. Alexandria)_, formatted with clear section headers (Chorus, Verse, Bridge, Outro) and a stylized album cover placeholder.
 
 ---
 
 ## ✨ Features
 
-| Feature | Description |
-|---------|-------------|
-| 🎨 **Sleek Dark Theme** | Black background with subtle gradients and accents creates a moody, music-focused atmosphere. |
-| 📱 **Fully Responsive** | Adapts seamlessly to desktop, tablet, and mobile viewports. |
+| Feature                   | Description                                                                                       |
+| ------------------------- | ------------------------------------------------------------------------------------------------- |
+| 🎨 **Sleek Dark Theme**   | Black background with subtle gradients and accents creates a moody, music-focused atmosphere.     |
+| 📱 **Fully Responsive**   | Adapts seamlessly to desktop, tablet, and mobile viewports.                                       |
 | 🎯 **Lyric-First Design** | Clean typography with proper spacing, scrollable lyric container, and highlighted section titles. |
-| 🖼️ **Visual Album Art** | Styled image placeholder with a red glow shadow effect. |
-| ⚡ **Lightweight & Fast** | Zero JavaScript, no external dependencies—just HTML and vanilla CSS. |
-| 🚀 **GitHub Pages Ready** | Configured with a GitHub Actions workflow for automatic deployment. |
+| 🖼️ **Visual Album Art**   | Styled image placeholder with a red glow shadow effect.                                           |
+| ⚡ **Lightweight & Fast** | Zero JavaScript, no external dependencies—just HTML and vanilla CSS.                              |
+| 🚀 **GitHub Pages Ready** | Configured with a GitHub Actions workflow for automatic deployment.                               |
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| **HTML5** | Page structure and semantic markup |
-| **CSS3** | Styling, theming, and responsive design |
+| Technology         | Purpose                                        |
+| ------------------ | ---------------------------------------------- |
+| **HTML5**          | Page structure and semantic markup             |
+| **CSS3**           | Styling, theming, and responsive design        |
 | **GitHub Actions** | CI/CD for automatic deployment to GitHub Pages |
 
 ---
@@ -78,6 +78,7 @@ Lyric-Site/
 ### Local Development
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Dani-Devlop/Lyric-Site.git
    cd Lyric-Site
@@ -96,15 +97,16 @@ Lyric-Site/
 
 ## 🎨 Styling Highlights
 
-| CSS Variable | Value | Description |
-|--------------|-------|-------------|
-| `--background-color` | `black` | Primary background |
-| `--text-color` | `oklch(0.85 0 0)` | Light gray text for readability |
-| `--Border-color` | `rgba(196, 127, 127, 0.74)` | Soft red border accents |
-| `--Cover-Shadow-Color` | `rgba(255, 0, 0, 0.74)` | Red glow shadow for album art |
-| `--Scroll-Color` | `#db1520` | Custom scrollbar thumb color |
+| CSS Variable           | Value                       | Description                     |
+| ---------------------- | --------------------------- | ------------------------------- |
+| `--background-color`   | `black`                     | Primary background              |
+| `--text-color`         | `oklch(0.85 0 0)`           | Light gray text for readability |
+| `--Border-color`       | `rgba(196, 127, 127, 0.74)` | Soft red border accents         |
+| `--Cover-Shadow-Color` | `rgba(255, 0, 0, 0.74)`     | Red glow shadow for album art   |
+| `--Scroll-Color`       | `#db1520`                   | Custom scrollbar thumb color    |
 
 The design uses:
+
 - **Radial gradients** for subtle depth on the title.
 - **Custom scrollbars** for a polished look.
 - **Flexbox** for centering and layout control.
@@ -115,11 +117,11 @@ The design uses:
 
 The page includes responsive breakpoints to ensure optimal viewing across all devices:
 
-| Breakpoint | Target Devices |
-|------------|----------------|
-| `max-width: 600px` | Small phones |
+| Breakpoint         | Target Devices             |
+| ------------------ | -------------------------- |
+| `max-width: 600px` | Small phones               |
 | `min-width: 601px` | Tablets and small desktops |
-| `min-width: 992px` | Large screens |
+| `min-width: 992px` | Large screens              |
 
 ---
 
@@ -166,9 +168,9 @@ This project is open-source and available under the [MIT License](https://github
 
 ## 📬 Contact
 
-**Developer:** Dani-Devlop  
+**Developer:** Dani-Devlop
 **GitHub:** [@Dani-Devlop](https://github.com/Dani-Devlop)
 
 ---
 
-*Made with ❤️ for the love of music and code.*
+_Made with ❤️ for the love of music and code._
