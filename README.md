@@ -1,9 +1,19 @@
 # 🎵 Lyric-Site
 
-**A beautifully styled, responsive lyric display page for *Marino – Lust (feat. Alexandria)***
+> A beautifully styled, responsive lyric display page for *Marino – Lust (feat. Alexandria)*
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-brightgreen)](https://dani-devlop.github.io/Lyric-Site/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Dani-Devlop/Lyric-Site/blob/main/LICENCE)
+
+---
+
+## 📸 Website Preview
+
+<p align="center">
+  <img src="assets/screenshot.png" alt="Lyric-Site Preview" width="700">
+</p>
+
+> *Replace `assets/screenshot.png` with an actual screenshot of your live site.*
 
 ---
 
@@ -17,12 +27,14 @@ The page features the full lyrics to *Marino – Lust (feat. Alexandria)*, forma
 
 ## ✨ Features
 
-- **🎨 Sleek Dark Theme** – A black background with subtle gradients and accents creates a moody, music-focused atmosphere.
-- **📱 Fully Responsive** – Adapts seamlessly to desktop, tablet, and mobile viewports (see responsive CSS breakpoints).
-- **🎯 Lyric-First Design** – Clean typography with proper spacing, scrollable lyric container, and highlighted section titles.
-- **🖼️ Visual Album Art** – Includes a styled image placeholder with a red glow shadow effect.
-- **⚡ Lightweight & Fast** – Zero JavaScript, no external dependencies—just HTML and vanilla CSS.
-- **🚀 GitHub Pages Ready** – Configured with a GitHub Actions workflow for automatic deployment.
+| Feature | Description |
+|---------|-------------|
+| 🎨 **Sleek Dark Theme** | Black background with subtle gradients and accents creates a moody, music-focused atmosphere. |
+| 📱 **Fully Responsive** | Adapts seamlessly to desktop, tablet, and mobile viewports. |
+| 🎯 **Lyric-First Design** | Clean typography with proper spacing, scrollable lyric container, and highlighted section titles. |
+| 🖼️ **Visual Album Art** | Styled image placeholder with a red glow shadow effect. |
+| ⚡ **Lightweight & Fast** | Zero JavaScript, no external dependencies—just HTML and vanilla CSS. |
+| 🚀 **GitHub Pages Ready** | Configured with a GitHub Actions workflow for automatic deployment. |
 
 ---
 
@@ -41,19 +53,18 @@ The page features the full lyrics to *Marino – Lust (feat. Alexandria)*, forma
 ```
 Lyric-Site/
 ├── index.html                 # Main entry point (lyrics page)
-├── Index.html                 # Duplicate/backup entry (same content)
 ├── Static/
 │   ├── Css/
-│   │   ├── Style.css          # Primary stylesheet (dark theme, scrollbar styling)
-│   │   ├── Style-Clone.css    # Responsive test styles (various background colors per breakpoint)
-│   │   └── Syle-Clone2.css    # Refined theme (pre-wrap whitespace, styled scrollbar)
+│   │   └── Style.css          # Primary stylesheet
 │   └── Image/
-│       └── .gitkeep           # Placeholder for album cover image
+│       └── cover.jpg          # Album cover image
 ├── .github/
 │   └── workflows/
-│       └── static.yml         # GitHub Actions workflow for Pages deployment
+│       └── static.yml         # GitHub Actions workflow
 └── README.md                  # Project documentation
 ```
+
+> **Note:** The backup `Index.html` and clone CSS files (`Style-Clone.css`, `Syle-Clone2.css`) have been removed for clarity. They are not used in the live deployment.
 
 ---
 
@@ -102,17 +113,13 @@ The design uses:
 
 ## 📱 Responsive Design
 
-The page includes responsive breakpoints (primarily in `Style-Clone.css`) for testing across device sizes:
+The page includes responsive breakpoints to ensure optimal viewing across all devices:
 
 | Breakpoint | Target Devices |
 |------------|----------------|
-| `max-width: 600px` (landscape) | Small phones in landscape |
-| `max-width: 600px` (portrait) | Small phones in portrait |
+| `max-width: 600px` | Small phones |
 | `min-width: 601px` | Tablets and small desktops |
-| `min-width: 768px` | Medium screens |
 | `min-width: 992px` | Large screens |
-
-> **Note:** `Style.css` is the primary active stylesheet. The clone files serve as experimental/backup variants.
 
 ---
 
@@ -124,11 +131,7 @@ This project is configured for automatic deployment to **GitHub Pages** via GitH
 
 1. **Push** to the `main` branch.
 2. **GitHub Actions** triggers the `static.yml` workflow.
-3. The workflow:
-   - Checks out the repository.
-   - Configures GitHub Pages.
-   - Uploads the entire repository as an artifact.
-   - Deploys to the `gh-pages` environment.
+3. The workflow checks out the repository, configures GitHub Pages, and deploys the site.
 
 ### Manual Deployment
 
@@ -150,7 +153,7 @@ Contributions are welcome! If you have suggestions for improvements:
 
 ## 📄 License
 
-This project is open-source and available under the **MIT License**.
+This project is open-source and available under the [MIT License](https://github.com/Dani-Devlop/Lyric-Site/blob/main/LICENCE).
 
 ---
 
